@@ -1,0 +1,7 @@
+.log
+/drivers
+/.ipynb_checkpoints
+data/.ipynb_checkpoints
+busqueda_elementos_der.py
+busqueda_elementos.py
+csv_reader.py
