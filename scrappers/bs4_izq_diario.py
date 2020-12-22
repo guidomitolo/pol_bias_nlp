@@ -22,15 +22,17 @@ lead = []
 body = []
 
 i = 0
+n_news = 0
 
-# arbitrary stop at 100 iterations
-while int(here.text) < 100:
+# arbitrary stop at 300 iterations
+while int(here.text) < 600:
     here = soup.find('strong', {'class':"on"})
-    print(f"{i + 1} page, articles from {int(here.text)} to {soup.find_all('a', {'class':'lien_pagination'})[i].text}")
+    print(f"{i + 1} page(s), articles from {int(here.text)} to {soup.find_all('a', {'class':'lien_pagination'})[i].text}")
 
     # strict selection
     news = soup.select("div[class=noticia]")
-    print('News collected:',len(news))
+    n_news += len(news)
+    print('News collected:', n_news)
 
     # parse while reading page source
     for p_news in news:
@@ -79,4 +81,4 @@ data = {
 }
 
 # save everything to a csv file
-pd.DataFrame(data).to_csv('izq_econ_news.csv')
+pd.DataFrame(data).to_csv('data/izq_econ_news_2.csv')
