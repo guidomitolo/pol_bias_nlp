@@ -27,7 +27,7 @@ n_news = 0
 # arbitrary stop at 300 iterations
 while int(here.text) < 600:
     here = soup.find('strong', {'class':"on"})
-    print(f"{i + 1} page(s), articles from {int(here.text)} to {soup.find_all('a', {'class':'lien_pagination'})[i].text}")
+    print(f"{i + 1}º page, articles from {int(here.text)} to {soup.find_all('a', {'class':'lien_pagination'})[i].text}")
 
     # strict selection
     news = soup.select("div[class=noticia]")
@@ -67,7 +67,8 @@ while int(here.text) < 600:
     # go to next page
     next_pag_url = base_url + soup.find_all('a', {'class':"lien_pagination"})[i]['href']
     soup = parse_url(next_pag_url)
-    i = i+1
+    if i < 5:
+        i += 1
     print('------------------------------------------')
 
 # make dict with lists
