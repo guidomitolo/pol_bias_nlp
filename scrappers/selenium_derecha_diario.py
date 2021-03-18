@@ -62,7 +62,7 @@ with webdriver.Firefox(executable_path = driver, options=options) as browser:
     link = []
 
     # parse and classify
-    for p_news in news:
+    for i, p_news in enumerate(news):
 
         url = 'https://derechadiario.com.ar' + p_news['href']
         link.append(url)
@@ -74,15 +74,7 @@ with webdriver.Firefox(executable_path = driver, options=options) as browser:
         web = requests.get(url)
         article = BeautifulSoup(web.content, 'html.parser')
         content = article.find('div', {'class':"jsx-2701897770 editor body"})
-        texto = str()
-        for paragraph in content.children:
-            out = ['h3', 'img', 'div']
-            if paragraph.name not in out:
-                try:
-                    texto = texto + paragraph.text
-                except:
-                    pass
-        body.append(texto)
+        body.append(content.text)
 
     data = {
         'date': date,
