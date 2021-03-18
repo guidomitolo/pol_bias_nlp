@@ -3,5 +3,7 @@ scrappers/drivers
 busqueda_elementos_der.py
 busqueda_elementos.py
 csv_reader.py
+/back
+/nlp_test
 
 *.ipynb_checkpoints
