@@ -1,5 +1,5 @@
 csv_reader.py
-.back
-.nlp_test
-.scrappers
+back/
+nlp_test/
+scrappers/
 *.ipynb_checkpoints
