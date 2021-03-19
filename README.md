@@ -25,7 +25,8 @@ Currency Exchange|"Derecha Diario"|30
 
 To check the coherence of this selection, we made a series of tests on a vectorized (with cv and tfidf) bag of words.
 
-#### a. SVD (linear combination with dimensionality reduction)
+#### a. SVD 
+Linear combination with dimensionality reduction
 
 - Izquierda Diario:<br>
 Just one article was mislabeled
@@ -39,21 +40,40 @@ Just one article was mislabeled
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_der.png)
   
   
-#### b. LDA (Latent Dirichlet Allocation), with and without tag filtering (to keep only nouns)
+#### b. LDA (Latent Dirichlet Allocation)
+Unsupervised word classification with and without tag filtering
 
 - Izquierda Diario
 
+All words
+
 > [(0,
-  '0.034*"dolar" + 0.012*"dolares" + 0.011*"millones" + 0.010*"banco" + 0.010*"us" + 0.009*"central" + 0.008*"deuda" + 0.008*"guzman" + 0.008*"oficial" + 0.008*"gobierno"'),
+  '0.037*"dolar" + 0.013*"dolares" + 0.011*"millones" + 0.011*"banco" + 0.011*"us" + 0.010*"central" + 0.009*"deuda" + 0.009*"guzman" + 0.008*"gobierno" + 0.008*"bonos"'),<br>
  (1,
-  '0.020*"precios" + 0.014*"inflacion" + 0.013*"aumento" + 0.012*"suba" + 0.011*"canasta" + 0.010*"alimentos" + 0.010*"productos" + 0.009*"salarios" + 0.009*"indec" + 0.008*"trabajadores"')
+  '0.020*"precios" + 0.014*"inflacion" + 0.014*"aumento" + 0.012*"suba" + 0.010*"canasta" + 0.009*"salarios" + 0.009*"alimentos" + 0.009*"productos" + 0.008*"indec" + 0.008*"trabajadores"')]
+  
+Only nouns (with nltk.pos_tag)
+
+> [(0,
+  '0.065*"precios" + 0.031*"salarios" + 0.030*"alimentos" + 0.030*"productos" + 0.025*"incremento" + 0.022*"aumentos" + 0.019*"meses" + 0.019*"gobierno" + 0.018*"bebidas" + 0.017*"ingresos"'),<br>
+ (1,
+  '0.036*"banco" + 0.031*"deuda" + 0.030*"gobierno" + 0.027*"bonos" + 0.026*"economia" + 0.021*"medidas" + 0.019*"brecha" + 0.018*"mercado" + 0.016*"tipo" + 0.014*"presion"')]
 
 - Derecha Diario
 
+All words
+
 > [(0,
-  '0.011*"inflacion" + 0.009*"precios" + 0.008*"dolar" + 0.008*"gobierno" + 0.008*"mercado" + 0.007*"economia" + 0.007*"tipo" + 0.006*"aumento" + 0.005*"monetaria" + 0.004*"argentina"'),
+  '0.011*"inflacion" + 0.009*"precios" + 0.008*"dolar" + 0.008*"gobierno" + 0.008*"mercado" + 0.007*"economia" + 0.007*"tipo" + 0.006*"aumento" + 0.005*"monetaria" + 0.004*"argentina"'),<br>
  (1,
   '0.008*"precios" + 0.008*"gobierno" + 0.008*"inflacion" + 0.007*"dolar" + 0.006*"mercado" + 0.006*"monetaria" + 0.006*"economia" + 0.005*"argentina" + 0.005*"banco" + 0.005*"pais"')]
+  
+Only nouns (with nltk.pos_tag)
+ 
+> [(0,
+  '0.037*"mercado" + 0.029*"tipo" + 0.029*"gobierno" + 0.025*"banco" + 0.018*"medidas" + 0.016*"brecha" + 0.016*"pais" + 0.014*"demanda" + 0.013*"economia" + 0.011*"divisas"'),<br>
+ (1,
+  '0.047*"precios" + 0.027*"economia" + 0.024*"gobierno" + 0.018*"nivel" + 0.014*"dinero" + 0.014*"pais" + 0.012*"indice" + 0.011*"actividad" + 0.011*"medidas" + 0.011*"dato"')]
 
 #### c. Naive Bayes
 
