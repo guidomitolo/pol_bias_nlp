@@ -1,9 +1,5 @@
-.log
-scrappers/drivers
-busqueda_elementos_der.py
-busqueda_elementos.py
 csv_reader.py
-/back
-/nlp_test
-
+back
+nlp_test
+scrappers
 *.ipynb_checkpoints
