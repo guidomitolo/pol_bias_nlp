@@ -25,7 +25,7 @@ Currency Exchange|"Derecha Diario"|30
 
 To check the coherence of this selection, we made a series of tests on a vectorized (with cv and tfidf) bag of words.
 
-#### a. SVD 
+### a. SVD 
 
 Linear combination with dimensionality reduction
 
@@ -41,7 +41,7 @@ Just one article was mislabeled
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_der.png)
   
   
-#### b. LDA (Latent Dirichlet Allocation)
+### b. LDA (Latent Dirichlet Allocation)
 
 Unsupervised word classification with and without tag filtering
 
@@ -77,7 +77,7 @@ Only nouns (with nltk.pos_tag)
  (1,
   '0.047*"precios" + 0.027*"economia" + 0.024*"gobierno" + 0.018*"nivel" + 0.014*"dinero" + 0.014*"pais" + 0.012*"indice" + 0.011*"actividad" + 0.011*"medidas" + 0.011*"dato"')]
 
-#### c. Naive Bayes
+### c. Naive Bayes
 
 After a divided train-test split (0.75 ratio) of the vectorized (with cv) documents, the ones of Derecha Diario found more problems to be classified as those of Izquierda Diario, which were labeled with the max. accuracy.
 
@@ -89,27 +89,26 @@ After a divided train-test split (0.75 ratio) of the vectorized (with cv) docume
 
 Bias detection per topic.
 
-#### a. Lexicon
+### a. Lexicon
 
 Word comparison by Tf-Idf score according to a particular economic topic.
 
 - Inflation
 
-Izquierda Diario | Derecha Diario
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inflation_VS.png)
 
 - Foreign Currency Exchange
 
-Izquierda Diario | Derecha Diario
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/exchange_VS.png)
 
-#### b. Supervised Classification
+### b. Supervised Classification
 
-News classification by news portal
+News classification by news portal (in progress)
 
-(in progress)
-
-## a. Model performance per topic
-Inflation|Exchange
-![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png)|![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png)
+#### b.1. Model performance per topic
+- Inflation
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png" width="50%" height="50%">
+![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png)
+- Exchange
+![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png)
 
