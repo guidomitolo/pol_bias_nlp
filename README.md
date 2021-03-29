@@ -106,9 +106,10 @@ Word comparison by Tf-Idf score according to a particular economic topic.
 News classification by news portal (in progress)
 
 #### b.1. Model performance per topic
+
 - Inflation
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png" width="50%" height="50%">
-![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png)
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png" width="75%" height="75%">
+
 - Exchange
-![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png)
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png" width="75%" height="75%">
 
