@@ -26,6 +26,7 @@ Currency Exchange|"Derecha Diario"|30
 To check the coherence of this selection, we made a series of tests on a vectorized (with cv and tfidf) bag of words.
 
 #### a. SVD 
+
 Linear combination with dimensionality reduction
 
 - Izquierda Diario:<br>
@@ -41,6 +42,7 @@ Just one article was mislabeled
   
   
 #### b. LDA (Latent Dirichlet Allocation)
+
 Unsupervised word classification with and without tag filtering
 
 - Izquierda Diario
@@ -85,23 +87,29 @@ After a divided train-test split (0.75 ratio) of the vectorized (with cv) docume
 
 ## 3. Versus
 
-Word comparison by Tf-Idf score according to a particular economic topic.
+Bias detection per topic.
 
 #### a. Lexicon
 
+Word comparison by Tf-Idf score according to a particular economic topic.
+
 - Inflation
 
-Izquierda Diario VS Derecha Diario
-
+Izquierda Diario | Derecha Diario
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inflation_VS.png)
 
 - Foreign Currency Exchange
 
-Izquierda Diario VS Derecha Diario
-
+Izquierda Diario | Derecha Diario
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/exchange_VS.png)
 
 #### b. Supervised Classification
 
+News classification by news portal
+
 (in progress)
+
+## a. Model performance per topic
+Inflation|Exchange
+![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png)|![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png)
 
