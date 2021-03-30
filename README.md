@@ -19,7 +19,6 @@ Topic|Site|Num. of Articles
 --|--|--
 Inflation|"Izquierda Diario"|39
 Currency Exchange|"Izquierda Diario"|26
---|--|--
 Inflation|"Derecha Diario"|42
 Currency Exchange|"Derecha Diario"|30
 
@@ -138,5 +137,7 @@ Stochastic Gradient Descent (SGD)
 
 - All topics
 <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png" width="50%" height="50%">
+
+### c. Sentiment Analysis
 
 
