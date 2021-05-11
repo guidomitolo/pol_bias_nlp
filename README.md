@@ -28,17 +28,6 @@ To check the coherence of this selection, we made a series of tests on a vectori
 
 Linear combination with dimensionality reduction
 
-- Izquierda Diario:<br>
-Just one article was mislabeled
-
-![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_izq.png)
-
-
-- Derecha Diario:<br>
-8 articles were hard to classify
-
-![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_der.png)
-
 Izquierda Diario | Derecha Diario
 :-------------------------:|:-------------------------:
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_izq.png)  |  ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_der.png)
