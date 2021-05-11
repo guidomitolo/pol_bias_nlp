@@ -38,6 +38,11 @@ Just one article was mislabeled
 8 articles were hard to classify
 
 ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_der.png)
+
+Izquierda Diario | Derecha Diario
+:-------------------------:|:-------------------------:
+![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_izq.png)  |  ![](https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svd_der.png)
+| Just one article was mislabeled | 8 articles were hard to classify |
   
   
 ### b. LDA (Latent Dirichlet Allocation)
@@ -112,6 +117,11 @@ News classification by news portal
 - Exchange
 <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png" width="50%" height="50%">
 
+Inflation | Exchange
+:-------------------------:|:-------------------------:
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png" width="50%" height="50%">  |  !<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png" width="50%" height="50%">
+
+
 #### b.1.b. Results from the best model (Ranking)
 
 Multinomial Naive Bayes
@@ -125,6 +135,10 @@ Multinomial Naive Bayes
 - All topics
 <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_all.png" width="50%" height="50%">
 
+Inflation | Exchange | All topics
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_inf.png" width="50%" height="50%">  |  <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_ex.png" width="50%" height="50%"> | <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_all.png" width="50%" height="50%">
+
 #### b.2. Results from the best model (Pipeline)
 
 Stochastic Gradient Descent (SGD)
@@ -137,6 +151,10 @@ Stochastic Gradient Descent (SGD)
 
 - All topics
 <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png" width="50%" height="50%">
+
+Inflation | Exchange | All topics
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_inf.png" width="50%" height="50%">  |  <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_ex.png" width="50%" height="50%"> | <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png" width="50%" height="50%">
 
 ### c. Sentiment Analysis
 
