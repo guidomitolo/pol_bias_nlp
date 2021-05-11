@@ -111,50 +111,43 @@ News classification by news portal
 
 #### b.1.a. Testing each model performance per topic
 
-- Inflation
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png" width="50%" height="50%">
-
-- Exchange
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png" width="50%" height="50%">
-
 Inflation | Exchange
 :-------------------------:|:-------------------------:
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png" width="50%" height="50%">  |  !<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png" width="50%" height="50%">
-
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/inf_models.png">  |  !<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/ex_models.png">
 
 #### b.1.b. Results from the best model (Ranking)
 
 Multinomial Naive Bayes
 
 - Inflation
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_inf.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_inf.png">
 
 - Exchange
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_ex.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_ex.png">
 
 - All topics
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_all.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_all.png">
 
 Inflation | Exchange | All topics
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_inf.png" width="50%" height="50%">  |  <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_ex.png" width="50%" height="50%"> | <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_all.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_inf.png">  |  <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_ex.png"> | <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/mnb_all.png">
 
 #### b.2. Results from the best model (Pipeline)
 
 Stochastic Gradient Descent (SGD)
 
 - Inflation
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_inf.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_inf.png">
 
 - Exchange
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_ex.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_ex.png">
 
 - All topics
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png">
 
 Inflation | Exchange | All topics
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_inf.png" width="50%" height="50%">  |  <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_ex.png" width="50%" height="50%"> | <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png" width="50%" height="50%">
+<img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_inf.png">  |  <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_ex.png"> | <img src="https://github.com/guidomitolo/pol_bias_nlp/blob/main/img/svg_pipe_all.png">
 
 ### c. Sentiment Analysis
 
